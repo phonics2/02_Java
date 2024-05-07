@@ -1,0 +1,10 @@
+package com.kh.FileEx;
+
+public class FileEx {
+	public static void main(String[] args) {
+		//파일이 존재하는지 확인
+		//파일만들고 글 작성하기
+		
+		
+	}
+}

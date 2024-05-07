@@ -1,0 +1,33 @@
+package com.kh.hamburger;
+
+
+import java.util.*;
+
+public class BurgerShop {
+	
+	public static void main(String[] args) {
+		ArrayList<hamburgerOrder> 주문리스트 = new ArrayList<>();
+		주문리스트.add(new hamburgerOrder("동그라미","치즈버거"));
+		주문리스트.add(new hamburgerOrder("안세모","베이컨버거"));
+		주문리스트.add(new hamburgerOrder("박네모","상하이버거"));
+		주문리스트.add(new hamburgerOrder("동그라미","빅맥"));
+
+		
+		//toString 출력 System.out.println 주문리스트
+		System.out.println(주문리스트);
+		
+		//ArrayList에 담긴 중복으로 된 사람들을 중복으로 주문하지 못하게 하고 싶습니다.
+		//HashSet
+		System.out.println("고객님 중복 주문이시네요!!");
+		System.out.println("마지막 주문으로 중복주문을 처리해드릴게요^^");
+		
+		Set<String> 중복고객제거 = new HashSet<>();
+		
+		//중복 고객을 제거한 다음에 중복되지 않은 고객만 ArrayList에 다시 담기
+		
+		List<hamburgerOrder> 중복제거주문 = new ArrayList<>();
+		
+		
+		
+	}
+}

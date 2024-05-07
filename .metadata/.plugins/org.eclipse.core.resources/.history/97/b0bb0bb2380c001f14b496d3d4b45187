@@ -1,0 +1,5 @@
+package com.kh.serialEx;
+
+public class 역직렬화 {
+
+}

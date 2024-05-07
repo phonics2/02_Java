@@ -1,0 +1,5 @@
+package 자바_예제문제실습;
+
+public class FileMain {
+
+}

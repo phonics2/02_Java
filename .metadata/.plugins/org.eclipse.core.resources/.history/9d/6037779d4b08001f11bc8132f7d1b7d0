@@ -1,0 +1,10 @@
+package com.kh.BasicEx;
+
+public class Myclass {
+	//필드
+		int id;
+		String message;
+		
+	//생성자
+		public MyClass
+}

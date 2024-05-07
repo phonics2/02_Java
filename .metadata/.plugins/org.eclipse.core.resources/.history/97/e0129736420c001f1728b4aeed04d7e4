@@ -1,0 +1,49 @@
+package com.kh.serverEx;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+	public static void main(String[] args) {
+		int port = 3000;
+		
+		String serverIP = "192.00.3.58";
+		ServerSocket server;
+		
+		
+		try {
+			
+			while(true) {
+				//server = new ServerSocket(port);  //주최자 집 주소인 IP를 변경하지 않을때
+				//server = new ServerSocket(port,InetAddress.getByName(serverIP)); ->구버전
+				server = new ServerSocket(port,50,InetAddress.getByName(serverIP));
+				//						->  50은 동시에 들어왔을 때 대기할 수 있는 크기	
+				Socket client = server.accept();
+				System.out.println("클라이언트가 접속했습니다.");
+				
+				//BufferedReader 글자를 실시간으로 읽어오기
+				BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+				//PrintWriter 를 사용해서 읽어온 글자 출력하기
+				PrintWriter out = new PrintWriter(client.getOutputStream(),true);
+				
+				String msg = in.readLine();
+				while(msg != null) {
+					System.out.println("send success" + msg);
+					out.println("c h e c k");
+				}
+				
+				//클라이언트가 전달한 메세지 보여주고 종료
+				client.close();
+				server.close();
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

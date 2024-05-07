@@ -1,0 +1,11 @@
+package com.kh.serialEx;
+
+public class Main {
+	public static void main(String[] args) {
+		//직렬화된 데이터를 저장할 파일 경로
+		String 파일이름 = "student.txt";
+		
+		//직렬화해서 전송할 객체 생성
+		Student 학생 = new Student("박말숙",30);
+	}
+}

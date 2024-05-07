@@ -1,0 +1,7 @@
+package 자바_예제문제실습;
+
+public class ArrayMovie {
+	public static void main(String[] args) {
+		//영화를 넣을 ArrayList
+	}
+}

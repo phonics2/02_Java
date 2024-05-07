@@ -1,0 +1,17 @@
+package com.kh.serverEx;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class IPPort {
+	
+	public static void main(String[] args) {
+		try {
+			String serverIP = InetAddress.getLocalHost().getHostAddress();
+			System.out.println(serverIP);
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

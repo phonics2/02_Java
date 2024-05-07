@@ -1,0 +1,9 @@
+package com.kh.serverEx;
+
+public class Client {
+	
+	public static void main(String[] args) {
+		int port = 3000;
+		String ip = "localhost";
+	}
+}

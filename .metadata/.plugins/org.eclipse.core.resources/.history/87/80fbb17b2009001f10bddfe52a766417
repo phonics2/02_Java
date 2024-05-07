@@ -1,0 +1,11 @@
+package Pre.propertiesEx2;
+
+import java.util.Properties;
+
+public class PropTest {
+	//fileSave
+	public static void fileSave(Properties p) {
+	//	1		순풍산부인과 1998 ,682
+	//  2		똑바로살아라 2002 ,239
+	}
+}
