@@ -1,9 +1,0 @@
-package ncs.test13;
-
-import java.*;
-
-public class Maptest {
-	public static void main(String[] args) {
-		Map<String,Inventory> inventoryMap = new HashMap<>();
-	}
-}
